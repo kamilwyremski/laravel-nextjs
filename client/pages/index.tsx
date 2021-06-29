@@ -12,7 +12,7 @@ import { H1 } from "./../components/Typography/Headers";
 export default function Home() {
     return (
         <>
-            <div className="flex w-screen h-screen items-center justify-center">
+            <div className="flex h-screen items-center justify-center">
                 <div className="w-1/2">
                     <H1 center={true} withMargin={true}>
                         Welcome to the Laravel Next.js Starter Kit

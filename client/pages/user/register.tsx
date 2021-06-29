@@ -117,14 +117,15 @@ function Register(props: any): ReactElement {
 
                         {/* The main header */}
                         <H1 withMargin={true} center={true}>
-                            Register
+                            Rejestracja
                         </H1>
 
                         {/* Name */}
                         <TextInput
                             type="text"
                             value={formData.name}
-                            placeholder="Your name..."
+                            label="Imię"
+                            placeholder="Wpisz swoje imię..."
                             onChange={(e) => {
                                 handleInputChange(e);
                             }}
@@ -136,7 +137,8 @@ function Register(props: any): ReactElement {
                         <TextInput
                             type="email"
                             value={formData.email}
-                            placeholder="Your email..."
+                            label="Adres e-mail"
+                            placeholder="Wpisz swój adres e-mail..."
                             onChange={(e) => {
                                 handleInputChange(e);
                             }}
@@ -148,7 +150,8 @@ function Register(props: any): ReactElement {
                         <TextInput
                             type="password"
                             value={formData.password}
-                            placeholder="Your password..."
+                            label="Hasło"
+                            placeholder="Wpisz swoje hasło..."
                             onChange={(e) => {
                                 handleInputChange(e);
                             }}
@@ -160,7 +163,8 @@ function Register(props: any): ReactElement {
                         <TextInput
                             type="password"
                             value={formData.password_confirmed}
-                            placeholder="Confirm your password..."
+                            label="Powtórz hasło"
+                            placeholder="Powtórz swoje hasło..."
                             onChange={(e) => {
                                 handleInputChange(e);
                             }}
@@ -175,14 +179,14 @@ function Register(props: any): ReactElement {
                             }}
                         >
                             <SmallSpinner show={props.loading}/>
-                            Register
+                            Zarejestruj
                         </PrimaryButton>
 
                         {/* Additional links. */}
                         <div className="w-full flex mt-3 text-blue-500">
                             <Link href="/user/login">
                                 <a className="text-xs underline">
-                                    Already have an account?
+                                    Masz już konto?
                                 </a>
                             </Link>
                         </div>

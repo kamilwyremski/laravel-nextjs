@@ -25,7 +25,9 @@ export function TextInput(props: any): ReactElement {
     // Return statement.
     return (
         <div className="text-input w-full mb-2">
+            {props.label && <label htmlFor={'input_' + props.name}>{props.label}</label>}
             <input
+                id={'input_' + props.name}
                 type={props.type || "text"}
                 value={props.value}
                 onChange={props.onChange}

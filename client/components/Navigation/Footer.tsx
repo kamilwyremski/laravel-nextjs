@@ -74,7 +74,7 @@ export function AdvancedFooter(): ReactElement {
 
     return (
         <footer className=" advanced-footer w-screen py-4 px-2 bg-purple-50">
-            <div className=" container mx-auto w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-28">
+            <div className=" container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-28">
                 {footerCols}
             </div>
         </footer>

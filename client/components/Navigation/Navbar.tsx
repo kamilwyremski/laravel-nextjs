@@ -33,7 +33,7 @@ export function Navbar(): ReactElement {
             {/* The Menu Bar that the horizontal bar at the top of the screen that is shown on all breakpoints. It includes the logo als well as the Burger Menu */}
             <MenuBar onClick={toggleNavbar} />
             <div
-                className={`h-screen w-full md:w-1/2 lg:w-1/3 xl:w-1/4 fixed top-0 right-0 transition-all bg-purple-50 ${sidebarOffset} flex flex-col items-center justiy-start z-50 shadow-lg pt-8 pb-16 px-10`}
+                className={`h-screen md:w-1/2 lg:w-1/3 xl:w-1/4 fixed top-0 right-0 transition-all bg-purple-50 ${sidebarOffset} flex flex-col items-center justiy-start z-50 shadow-lg pt-8 pb-16 px-10`}
             >
                 <div
                     className="flex justify-end w-full pb-8 cursor-pointer"
@@ -55,11 +55,6 @@ export function Navbar(): ReactElement {
                     </svg>
                 </div>
                 <NavbarMenuLink title="Home" link="/" onClick={toggleNavbar} />
-                <NavbarMenuLink
-                    title="Documentation"
-                    link="/docs"
-                    onClick={toggleNavbar}
-                />
                 <NavbarMenuLink
                     title="Blog"
                     link="/blog"

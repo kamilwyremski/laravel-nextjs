@@ -41,7 +41,7 @@ export class UserValidator {
         // Check name.
         const isNameValid = this.validateName(name);
         if (!isNameValid) {
-            errors.name = "The name may only contain letters.";
+            errors.name = "Imię powinno zawierać tylko litery.";
             errorDetected = true;
         }
 
@@ -53,14 +53,14 @@ export class UserValidator {
         );
         if (!isPasswordValid) {
             errors.password =
-                "The password must be at least 8 characters long.";
+                "Hasło musi zawierać minimum " + minPassChars + " znaków";
             errorDetected = true;
         }
 
         // Check email.
         const isEmailValid = this.validateEmail(email);
         if (!isEmailValid) {
-            errors.email = "Please provide a valid email address.";
+            errors.email = "Wprowadź prawidłowy adres e-mail.";
             errorDetected = true;
         }
 
